@@ -1,0 +1,22 @@
+{
+  "name": "whats-new",
+  "version": "1.0.0",
+  "description": "Tiny helper for debugging React props changes",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeflynn/whats-new.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "jo flynn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joeflynn/whats-new/issues"
+  },
+  "homepage": "https://github.com/joeflynn/whats-new#readme"
+}
