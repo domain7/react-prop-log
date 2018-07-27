@@ -57,17 +57,13 @@
       "warn",
       {
         "devDependencies": [
-          "**/*.config.js"
+          "**/*.config.js",
+          "**/*.test.js"
         ]
       }
     ],
     "import/imports-first": 1,
     "object-shorthand": 1,
-    "react/prefer-stateless-function": [
-      1,
-      {
-        "ignorePureComponents": true
-      }
-    ]
+    "react/prefer-stateless-function": 0
   }
 }

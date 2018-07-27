@@ -2,13 +2,15 @@
   "env": {
     "test": {
       "presets": [
-        ["env", { "modules": "commonjs" }]
+        ["env", { "modules": "commonjs" }],
+        "react"
       ]
     },
     "build": {
-       "presets": [
-          ["env", { "modules": false }]
-        ]
-     }
+      "presets": [
+        ["env", { "modules": false }],
+        "react"
+      ]
+    }
   }
 }
