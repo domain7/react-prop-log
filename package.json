@@ -11,6 +11,7 @@
     "test": "BABEL_ENV=test jest --coverage",
     "test:watch": "BABEL_ENV=test jest --watch",
     "pretest": "npm run build",
+    "prepare": "npm run build",
     "lint": "eslint --ignore-path .gitignore ."
   },
   "files": [

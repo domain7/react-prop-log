@@ -7,8 +7,8 @@ export default [
   {
     input: 'src/main.js',
     output: [
-      { file: pkg.main, format: 'cjs', exports: 'named' },
-      { file: pkg.module, format: 'es', exports: 'named' },
+      { file: pkg.main, format: 'cjs' },
+      { file: pkg.module, format: 'es' },
     ],
     external: ['react', 'react-dom'],
     plugins: [
