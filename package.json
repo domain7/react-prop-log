@@ -19,17 +19,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/joeflynn/whats-new.git"
+    "url": "https://github.com/domain7/whats-new.git"
   },
   "keywords": [
     "react"
   ],
   "author": "jo flynn",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/joeflynn/whats-new/issues"
+    "url": "https://github.com/domain7/whats-new/issues"
   },
-  "homepage": "https://github.com/joeflynn/whats-new#readme",
+  "homepage": "https://github.com/domain7/whats-new#readme",
   "jest": {
     "collectCoverage": true,
     "collectCoverageFrom": ["src/**"],
