@@ -2,11 +2,11 @@
 
 A simple React performance and debugging helper. Drop into a component and monitor props changes in the console.
 
-# Installation
+## Installation
 
 `npm i --save-dev whats-new`
 
-# Usage
+## Usage
 
 `whatsNew` is a function that'll wrap a component and log any props changes whenever the `componentDidUpdate` lifecycle method executes. `whatsNew` is a higher-order component, so you'll add it similarly to Redux's `connect`.
 
