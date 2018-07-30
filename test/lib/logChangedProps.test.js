@@ -1,4 +1,4 @@
-import logChangedProps from '../../src/lib/logChangedProps';
+import logChangedProps, { stripUtilName } from '../../src/lib/logChangedProps';
 
 describe('logChangedProps', () => {
   beforeEach(() => {
@@ -12,7 +12,7 @@ describe('logChangedProps', () => {
       c: 3,
     };
     const component = {
-      constructor: { displayName: 'TestComponent' },
+      constructor: { displayName: 'WhatsNew(TestComponent)' },
       props: {
         a: 4,
         b: 2,
@@ -31,11 +31,25 @@ describe('logChangedProps', () => {
       c: 3,
     };
     const component = {
-      constructor: { name: 'TestComponent' },
+      constructor: { name: 'WhatsNew(TestComponent)' },
       props: prevProps,
     };
 
     logChangedProps(prevProps, component);
     expect(console.log).not.toBeCalled();
+  });
+});
+
+describe('stripUtilName', () => {
+  it('should remove WhatsNew( ) from input if it exists', () => {
+    expect(stripUtilName('WhatsNew(TestComponent)')).toBe('TestComponent');
+  });
+
+  it('should return input if WhatsNew( ) is not present', () => {
+    expect(stripUtilName('TestComponent')).toBe('TestComponent');
+  });
+
+  it('should retain any other higher order Component( ) names in input', () => {
+    expect(stripUtilName('WhatsNew(TestHOC(TestComponent))')).toBe('TestHOC(TestComponent)');
   });
 });

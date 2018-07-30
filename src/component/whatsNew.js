@@ -4,7 +4,6 @@ import logChangedProps from '../lib/logChangedProps';
 function whatsNew(WrappedComponent) {
   class WhatsNew extends React.Component {
     componentDidUpdate(nextProps) {
-      console.log(this);
       logChangedProps(nextProps, this);
     }
 
@@ -13,7 +12,7 @@ function whatsNew(WrappedComponent) {
     }
   }
 
-  WhatsNew.displayName = getDisplayName(WrappedComponent);
+  WhatsNew.displayName = `WhatsNew(${getDisplayName(WrappedComponent)})`;
   return WhatsNew;
 }
 
