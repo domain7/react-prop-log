@@ -31,3 +31,7 @@ class YourComponent extends React.Component {
 
 export default YourComponent;
 ```
+
+## Development
+
+See [CONTRIBUTING](https://github.com/domain7/whats-new/blob/master/CONTRIBUTING.md) for information on working with the codebase.
