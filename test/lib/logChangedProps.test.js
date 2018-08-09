@@ -12,7 +12,7 @@ describe('logChangedProps', () => {
       c: 3,
     };
     const component = {
-      constructor: { displayName: 'WhatsNew(TestComponent)' },
+      constructor: { displayName: 'PropLog(TestComponent)' },
       props: {
         a: 4,
         b: 2,
@@ -31,7 +31,7 @@ describe('logChangedProps', () => {
       c: 3,
     };
     const component = {
-      constructor: { name: 'WhatsNew(TestComponent)' },
+      constructor: { name: 'PropLog(TestComponent)' },
       props: prevProps,
     };
 
@@ -41,15 +41,15 @@ describe('logChangedProps', () => {
 });
 
 describe('stripUtilName', () => {
-  it('should remove WhatsNew( ) from input if it exists', () => {
-    expect(stripUtilName('WhatsNew(TestComponent)')).toBe('TestComponent');
+  it('should remove PropLog( ) from input if it exists', () => {
+    expect(stripUtilName('PropLog(TestComponent)')).toBe('TestComponent');
   });
 
-  it('should return input if WhatsNew( ) is not present', () => {
+  it('should return input if PropLog( ) is not present', () => {
     expect(stripUtilName('TestComponent')).toBe('TestComponent');
   });
 
   it('should retain any other higher order Component( ) names in input', () => {
-    expect(stripUtilName('WhatsNew(TestHOC(TestComponent))')).toBe('TestHOC(TestComponent)');
+    expect(stripUtilName('PropLog(TestHOC(TestComponent))')).toBe('TestHOC(TestComponent)');
   });
 });

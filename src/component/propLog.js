@@ -1,8 +1,8 @@
 import React from 'react';
 import logChangedProps from '../lib/logChangedProps';
 
-function whatsNew(WrappedComponent) {
-  class WhatsNew extends React.Component {
+function propLog(WrappedComponent) {
+  class PropLog extends React.Component {
     componentDidUpdate(nextProps) {
       logChangedProps(nextProps, this);
     }
@@ -12,12 +12,12 @@ function whatsNew(WrappedComponent) {
     }
   }
 
-  WhatsNew.displayName = `WhatsNew(${getDisplayName(WrappedComponent)})`;
-  return WhatsNew;
+  PropLog.displayName = `PropLog(${getDisplayName(WrappedComponent)})`;
+  return PropLog;
 }
 
 export function getDisplayName(WrappedComponent) {
   return WrappedComponent.displayName || WrappedComponent.name || 'Component';
 }
 
-export default whatsNew;
+export default propLog;

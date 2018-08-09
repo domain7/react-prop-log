@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import whatsNew, { getDisplayName } from '../../src/component/whatsNew';
+import propLog, { getDisplayName } from '../../src/component/propLog';
 
-describe('whatsNew', () => {
+describe('propLog', () => {
   let TestComponent;
   beforeEach(() => {
     class MockComponent extends React.Component {
@@ -14,7 +14,7 @@ describe('whatsNew', () => {
         );
       }
     }
-    TestComponent = whatsNew(MockComponent);
+    TestComponent = propLog(MockComponent);
   });
 
   it('should render passed components', () => {

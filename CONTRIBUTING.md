@@ -1,5 +1,5 @@
 # Contributing
-What's New uses [Rollup](https://rollupjs.org/) to build and [Jest](https://jestjs.io/) for testing.
+react-prop-log uses [Rollup](https://rollupjs.org/) to build and [Jest](https://jestjs.io/) for testing.
 
 ## Setup
 Clone the project, then run `npm i`.

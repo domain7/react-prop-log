@@ -1,7 +1,7 @@
 import logChangedProps from './lib/logChangedProps';
-import whatsNew from './component/whatsNew';
+import propLog from './component/propLog';
 
 export {
   logChangedProps,
-  whatsNew,
+  propLog,
 };

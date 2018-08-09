@@ -1,8 +1,8 @@
-import { whatsNew, logChangedProps } from '../src/main';
+import { propLog, logChangedProps } from '../src/main';
 
 describe('main', () => {
   it('exports a higher-order component for debug logging', () => {
-    expect(whatsNew).toBeDefined();
+    expect(propLog).toBeDefined();
   });
 
   it('exports the debug logging function if needed', () => {

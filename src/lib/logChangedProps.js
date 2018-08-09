@@ -7,7 +7,7 @@ export default function logChangedProps(prevProps, component) {
 }
 
 export function stripUtilName(name) {
-  const componentName = name.match(/WhatsNew\(([^)].*)\)/);
+  const componentName = name.match(/PropLog\(([^)].*)\)/);
   if (componentName) {
     return componentName[1];
   }

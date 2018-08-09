@@ -1,10 +1,10 @@
 {
-  "name": "whats-new",
+  "name": "react-prop-log",
   "version": "1.0.0",
   "description": "Tiny helper for debugging React props changes",
-  "main": "dist/whats-new.cjs.js",
-  "module": "dist/whats-new.esm.js",
-  "browser": "dist/whats-new.umd.js",
+  "main": "dist/react-prop-log.cjs.js",
+  "module": "dist/react-prop-log.esm.js",
+  "browser": "dist/react-prop-log.umd.js",
   "scripts": {
     "build": "BABEL_ENV=build rollup -c",
     "dev": "BABEL_ENV=build rollup -c -w",
@@ -19,20 +19,22 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/domain7/whats-new.git"
+    "url": "https://github.com/domain7/react-prop-log.git"
   },
   "keywords": [
     "react"
   ],
-  "author": "jo flynn",
+  "author": "Domain7",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/domain7/whats-new/issues"
+    "url": "https://github.com/domain7/react-prop-log/issues"
   },
-  "homepage": "https://github.com/domain7/whats-new#readme",
+  "homepage": "https://github.com/domain7/react-prop-log#readme",
   "jest": {
     "collectCoverage": true,
-    "collectCoverageFrom": ["src/**"],
+    "collectCoverageFrom": [
+      "src/**"
+    ],
     "setupFiles": [
       "<rootDir>/test.config.js"
     ]
