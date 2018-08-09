@@ -1,6 +1,6 @@
 {
   "name": "react-prop-log",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Tiny helper for debugging React props changes",
   "main": "dist/react-prop-log.cjs.js",
   "module": "dist/react-prop-log.esm.js",
