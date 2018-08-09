@@ -16,7 +16,7 @@ import { propLog } from 'react-prop-log';
 export default propLog(YourComponentName);
 ```
 
-To ensure you see all props changes when debugging, make sure propLog is the innermost function if your component is nested in multiple HOCs.
+To ensure you see all props changes when debugging, make sure `propLog` is the innermost function if your component is nested in multiple HOCs.
 
 ```js
 // do this
